@@ -3,9 +3,20 @@
     display: block;
     border: black 2px solid;
     margin: 20px;
-
+    width: 450px;
     background-color: #FFA07A;
     border-radius: 10px;
 }
+.thingsToDO {
+    margin: 0 auto;
+    text-align: center;
+    background-color: chocolate;
+    color: black;
+    font-size: large;
+    font-weight: bold;
 
+
+
+
+}
 

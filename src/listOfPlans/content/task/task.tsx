@@ -1,23 +1,22 @@
 import React from 'react';
 import st from "./task.module.css";
+import {ValueOfTasks} from "../../listOfPlans";
 
 
-type TaskTypes = {
- ids: any   // Непонятная хуйня
- titles: string
- priorities: 'High'| 'Middle'| 'Low'
-
+type PropsTypes = {
+ task: ValueOfTasks
+    removeTask:(listId:number) => void
 }
 
 
 
-function Task(props: TaskTypes) {
+function Task(props: PropsTypes) {
     return (
         <div className={st.plan}>
-            <div className={st.item} id={props.ids} >
-                <div className={st.title}>{props.titles}</div>
-                <div className={st.prior}>{props.priorities}</div>
-                <button>Удалить</button>
+            <div className={st.item}>
+                <div className={st.title}>{props.task.title}</div>
+                <div className={st.prior}>{props.task.priority}</div>
+                <button onClick={() => props.removeTask(props.task.id)}>Remove</button>
             </div>
         </div>
     )
