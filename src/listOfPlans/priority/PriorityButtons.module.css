@@ -1,0 +1,54 @@
+
+
+.header {
+
+    border: 1px black solid;
+    background-color: #FAF0E6;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    /*text-shadow: 1px 2px 3px black;*/
+    font-family: "Arial Rounded MT Bold", Times, Garamond, Georgia, serif;
+}
+
+
+
+.priorities {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+
+}
+
+
+.itemB {
+    display: inline-flex;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center;
+    border-radius: 30px;
+    width: 200px;
+    background-color: #FFD700;
+    font-size: 20px;
+}
+
+.item {
+    border: black 1px solid;
+    margin: 2px;
+    border-radius: 15px;
+    background-color: #FAF0E6;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-flex;
+    width: 90%;
+    justify-content: center;
+
+
+}
+
+

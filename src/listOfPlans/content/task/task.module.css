@@ -1,0 +1,57 @@
+
+.plan {
+    margin: 2px;
+    text-align: center;
+
+}
+
+
+.item {
+    border: black 1px solid;
+    border-radius: 15px;
+    background-color: #FAF0E6;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-flex;
+    width: 90%;
+    justify-content: center;
+    min-height: 30px;
+
+
+}
+
+.title {
+    margin-right: 10px;
+    margin-left: 10px;
+    flex-grow: 2;
+    text-align: left;
+    word-wrap: break-word;
+    width: 150px;
+
+
+}
+
+.item button {
+
+    border: none;
+    align-self: center;
+    align-content: center;
+    flex-grow: 1;
+    border-radius: 20px;
+    border: black solid 1px;
+
+
+}
+
+.prior {
+    flex-grow: 1;
+    min-width: 0;
+    word-wrap: break-word;
+    border: black solid 1px;
+    align-self: center;
+    align-content: center;
+    width: 1px;
+    border-radius: 20px;
+
+
+}
