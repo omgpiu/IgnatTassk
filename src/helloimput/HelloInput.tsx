@@ -11,18 +11,13 @@ function HelloInput() {
         {id: v1(), title: 'Dasha'}
     ])
 
- let summ;
     function addName(title: string) {
         let list = {id: v1(), title: title};
         let newList = [list, ...lists];
-        summ = Object.keys(newList).length
         setLists(newList)
-
     }
 
     let [title, setTitle] = useState('')
-
-
     let listOfNames = lists.map(t => {
         return (
 
@@ -35,20 +30,21 @@ function HelloInput() {
 
     function greeting() {
 
-     if (title !== '') {
-        addName(title);
-        alert('Hello ' + title)
-        setTitle('')
-    } else {
-        alert('Input your name,please')
-    }}
-document.write(summ)
+        if (title.length > 2) {
+            addName(title);
+            alert('Hello ' + title)
+            setTitle('')
+        } else {
+            alert('Input your name,please')
+        }
+    }
+
     return (
 
         <div className={st.wrapper}>
 
-            <span>Say Hello</span>
-
+            <span className={st.title}>Say Hello</span>
+            <div>Количество имен в списке - {lists.length}</div>
             <input
 
                 type="text"
@@ -56,6 +52,7 @@ document.write(summ)
                 onChange={(e) => {
                     setTitle(e.currentTarget.value)
                 }}
+                onKeyPress={(e)=>{if(e.charCode===13){greeting()}}}
 
             />
             <button onClick={() => {
@@ -64,7 +61,6 @@ document.write(summ)
             </button>
             <div>
                 {listOfNames}
-
             </div>
 
 
