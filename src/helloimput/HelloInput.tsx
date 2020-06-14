@@ -3,21 +3,30 @@ import st from './HelloImput.module.css'
 import {v1} from "uuid";
 
 
+type NameType = {
+    title:string
+    id: string
+
+}
+
+
+
 function HelloInput() {
 
-    let [lists, setLists] = useState([
-        {id: v1(), title: 'Sasha'},
-        {id: v1(), title: 'Masha'},
-        {id: v1(), title: 'Dasha'}
-    ])
+    let [lists, setLists] = useState<Array<NameType>>([]);
+    let [title, setTitle] = useState('')
 
-    function addName(title: string) {
-        let list = {id: v1(), title: title};
-        let newList = [list, ...lists];
-        setLists(newList)
+    function greeting() {
+        if (title.trim()) {
+            alert('Hello ' + title)
+            setTitle('')
+            setLists([...lists,{title:title, id:v1()}])
+        } else {
+            alert('Input your name,please')
+        }
     }
 
-    let [title, setTitle] = useState('')
+
     let listOfNames = lists.map(t => {
         return (
 
@@ -28,36 +37,26 @@ function HelloInput() {
         )
     });
 
-    function greeting() {
 
-        if (title.length > 2) {
-            addName(title);
-            alert('Hello ' + title)
-            setTitle('')
-        } else {
-            alert('Input your name,please')
-        }
-    }
 
     return (
 
         <div className={st.wrapper}>
-
             <span className={st.title}>Say Hello</span>
             <div>Количество имен в списке - {lists.length}</div>
             <input
-
                 type="text"
                 value={title}
                 onChange={(e) => {
                     setTitle(e.currentTarget.value)
                 }}
-                onKeyPress={(e)=>{if(e.charCode===13){greeting()}}}
-
+                onKeyPress={(e) => {
+                    if (e.charCode === 13) {
+                        greeting()
+                    }
+                }}
             />
-            <button onClick={() => {
-                greeting()
-            }}>+
+            <button onClick={greeting}>+
             </button>
             <div>
                 {listOfNames}
