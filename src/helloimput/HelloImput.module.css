@@ -1,6 +1,6 @@
 .wrapper {
     margin: 0 auto;
-    width: 400px;
+    width: 600px;
     padding: 20px;
     border: 5px dotted black;
     border-radius: 40px;
@@ -16,5 +16,12 @@
     border-radius: 10px;
 
 
+}
+.error {
+    border: red 1px solid;
+}
+
+.error_message {
+    color: red;
 }
 
