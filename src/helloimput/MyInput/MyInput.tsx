@@ -17,10 +17,13 @@ function MyInputNya (props: InputNyaPropsType) {
 
 
 
+
     return (
         <>
-            <input onKeyPress={HandlerOnKeyPress} {...restProps} className={st.input_style} type="text"/>
+
+            <input onKeyPress={HandlerOnKeyPress} {...restProps} className={error ? `${st.error} ${st.input_style}`:st.input_style} type="text"/>
             {error && <div className={st.error_message}>{error}</div>}
+
         </>
     );
 };

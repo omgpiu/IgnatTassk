@@ -1,16 +1,25 @@
 
+.input_style {
 
-.input_style{
+    border: 1px solid #cccccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    background: #ffffff;
+    outline: none;
+    height: 40px;
+    width: 270px;
+    color: #cccccc;
+    font-size: 20px;
 
-border: 1px solid #cccccc;
-border-radius: 15px;
--webkit-border-radius: 3px;
--moz-border-radius: 3px;
-background: #ffffff !important;
-outline: none;
-height: 40px;
-width: 270px;
-color: #cccccc;
-font-size: 20px;
-font-family: Tahoma;
+    border-radius: 10px;
 }
+
+.error {
+    border: red 3px solid;
+}
+
+.error_message {
+    color: red;
+
+}
+

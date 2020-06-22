@@ -55,12 +55,15 @@ function HelloInput() {
             <span className={st.title}>Say Hello</span>
             <div>Количество имен в списке - {lists.length}</div>
 
-            <div> <MyButtonNya onClick={greeting} title={'Нажми меня'} /></div>
+            <div> <MyButtonNya onClick={greeting} value={'Push me'}  title={'Do it'}/></div>
+
             <MyInputNya type="text"
                         value={title}
                         onChange={onChangeHandler}
                         onKeyPress={onKeyPressHandler}
-                        error={error}/>
+                        error={error}
+
+            />
 
 
 
