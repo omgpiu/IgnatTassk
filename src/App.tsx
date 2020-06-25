@@ -12,6 +12,7 @@ function App() {
             <div>Задача №1</div>
             <MessageContainer name={'Alex'} message={'Did you write something?'} time={'11.20'}/>
             <div>
+
                 <hr/>
                 Задача №2
             </div>
