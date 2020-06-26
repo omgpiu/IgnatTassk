@@ -1,0 +1,45 @@
+.holder{
+    position:relative;
+    width:200px;
+    height:100vh;
+    /*background:#ff6600;*/
+    margin:0;
+    left: 0;
+    float: left;
+}
+.block{
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+    /*background:rgba(255,255,255, 0.7);*/
+    padding-top:50px;
+    padding-left: 10px;
+    display:none;
+
+}
+.holder:hover .block{
+    display:block;
+}
+
+
+.holder2 {
+    position:relative;
+    width:200px;
+    height:100vh;
+    /*background:#ff6600;*/
+    margin:0;
+    float: right;
+}
+.block2{
+    position:absolute;
+
+    /*background:rgba(255,255,255, 0.7);*/
+    padding-top:50px;
+    padding-left: 10px;
+    display:none;
+}
+.holder2:hover .block2{
+    display:block;
+}

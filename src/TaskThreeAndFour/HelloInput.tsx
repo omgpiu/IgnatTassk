@@ -3,7 +3,6 @@ import st from './HelloImput.module.css';
 import {v1} from 'uuid';
 import MyInputNya from './MyInput/MyInput';
 import MyButtonNya from './MyButton/MyButton';
-import {NavLink} from 'react-router-dom';
 
 
 type NameType = {
@@ -58,7 +57,7 @@ function HelloInput() {
             <span className={st.title}>Say Hello</span>
             <div>Количество имен в списке - {lists.length}</div>
 
-            <div> <MyButtonNya onClick={greeting} value={'Push me'}  title={'Do it'}/></div>
+            <div><MyButtonNya onClick={greeting} value={'Push me'} title={'Do it'}/></div>
 
             <MyInputNya type="text"
                         value={title}
@@ -69,13 +68,11 @@ function HelloInput() {
             />
 
 
-
             <div>
                 {listOfNames}
             </div>
 
         </div>
-
 
 
     );

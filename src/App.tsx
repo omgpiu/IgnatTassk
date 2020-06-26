@@ -6,13 +6,14 @@ import TaskNavBar from './TaskFive/TaskNavBar';
 import HomePage from './HomePage/HomePage';
 import {HashRouter, Route} from 'react-router-dom';
 import TaskFiveWebsite from './TaskFive/TaskFIveWebsite/TaskFiveWebsite';
-
+import st from './App.module.css';
 
 function App() {
 
 
     return (
         <HashRouter>
+            <div className={st.wrapper}>
             <TaskNavBar/>
             <Route path={'/homepage'} render={() => <HomePage/>}/>
             <Route path={'/taskone'} render={() => <MessageContainer name={'Alex'}
@@ -23,6 +24,7 @@ function App() {
                 secondTitle={'Studying'}/>}/>
             <Route path={'/taskThreeAndFour'} render={() => <HelloInput/>}/>
             <Route path={'/taskFive'} render={() => <TaskFiveWebsite/>}/>
+            </div>
         </HashRouter>
     );
 }
