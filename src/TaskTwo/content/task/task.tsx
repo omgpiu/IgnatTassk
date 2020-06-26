@@ -5,7 +5,7 @@ import {ValueOfTasks} from "../../listOfPlans";
 
 type PropsTypes = {
  task: ValueOfTasks
-    removeTask:(listId:number) => void
+    removeTask:(listId:string) => void
 }
 
 

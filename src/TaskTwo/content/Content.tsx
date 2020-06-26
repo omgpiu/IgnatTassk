@@ -6,7 +6,7 @@ import Task from "./task/task";
 
 export type PropsType = {
     lists: Array<ValueOfTasks>
-    removeTask:(taskId:number) => void
+    removeTask:(taskId:string) => void
 
 }
 

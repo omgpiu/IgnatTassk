@@ -3,6 +3,7 @@ import st from './HelloImput.module.css';
 import {v1} from 'uuid';
 import MyInputNya from './MyInput/MyInput';
 import MyButtonNya from './MyButton/MyButton';
+import {NavLink} from 'react-router-dom';
 
 
 type NameType = {
@@ -13,6 +14,7 @@ type NameType = {
 
 
 function HelloInput() {
+
 
     let [lists, setLists] = useState<Array<NameType>>([]);
     let [title, setTitle] = useState('');
@@ -52,6 +54,7 @@ function HelloInput() {
     return (
 
         <div className={st.wrapper}>
+
             <span className={st.title}>Say Hello</span>
             <div>Количество имен в списке - {lists.length}</div>
 
@@ -72,6 +75,7 @@ function HelloInput() {
             </div>
 
         </div>
+
 
 
     );

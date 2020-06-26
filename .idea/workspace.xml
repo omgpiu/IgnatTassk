@@ -19,7 +19,40 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7c9fe08-2dcd-44f5-9b50-39f16ede1c10" name="Default Changelist" comment="Новое задание&#10;&#10;Новое задание" />
+    <list default="true" id="b7c9fe08-2dcd-44f5-9b50-39f16ede1c10" name="Default Changelist" comment="Новое задание&#10;&#10;Новое задание">
+      <change afterPath="$PROJECT_DIR$/src/HomePage/HomePage.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HomePage/HomePage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TaskFive/Junior+/JuniorPage.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TaskFive/Junior+/JuniorPlusPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TaskFive/Junior/JuniorPage.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TaskFive/Junior/JuniorPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TaskFive/TaskFIveWebsite/TaskFiveWebsite.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TaskFive/TaskNavBar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TaskFive/preJunior/preJuniorPage.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TaskFive/preJunior/preJuniorPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TaskOne/TaskOne.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Appfirst.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/TaskOne/TaskOne.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helloimput/HelloImput.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/TaskThreeAndFour/HelloImput.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helloimput/HelloInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/TaskThreeAndFour/HelloInput.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helloimput/MyButton/MyButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/TaskThreeAndFour/MyButton/MyButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helloimput/MyButton/MyNewButton.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/TaskThreeAndFour/MyButton/MyNewButton.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helloimput/MyInput/Input.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/TaskThreeAndFour/MyInput/Input.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helloimput/MyInput/MyInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/TaskThreeAndFour/MyInput/MyInput.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/listOfPlans/content/Content.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/TaskTwo/content/Content.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/listOfPlans/content/Content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/TaskTwo/content/Content.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/listOfPlans/content/task/task.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/TaskTwo/content/task/task.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/listOfPlans/content/task/task.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/TaskTwo/content/task/task.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/listOfPlans/listOfPlans.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/TaskTwo/listOfPlans.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/listOfPlans/listOfPlans.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/TaskTwo/listOfPlans.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/listOfPlans/priority/PriorityButtons.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/TaskTwo/priority/PriorityButtons.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/listOfPlans/priority/PriorityButtons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/TaskTwo/priority/PriorityButtons.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,7 +81,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/TaskFive/TaskFIveWebsite" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -59,14 +92,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Education\ignattask1\ignattassk\src\NotMine" />
-      <recent name="D:\Education\ignattask1\ignattassk\src\helloimput" />
+      <recent name="D:\Education\ignattask1\ignattassk\src\TaskTwo" />
+      <recent name="D:\Education\ignattask1\ignattassk\src\TaskOne" />
+      <recent name="D:\Education\ignattask1\ignattassk\src" />
+      <recent name="D:\Education\ignattask1\ignattassk\src\TaskThree" />
+      <recent name="D:\Education\ignattask1\ignattassk\src\TaskFour" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Education\ignattask1\ignattassk\src\helloimput\MyInput" />
-      <recent name="D:\Education\ignattask\src\listOfPlans\content" />
-      <recent name="D:\Education\ignattask\src\listOfPlans\priority" />
-      <recent name="D:\Education\ignattask\src\listOfPlans" />
+      <recent name="D:\Education\ignattask1\ignattassk\src\TaskFive\TaskFIveWebsite" />
+      <recent name="D:\Education\ignattask1\ignattassk\src\HomePage" />
+      <recent name="D:\Education\ignattask1\ignattassk\src\TaskOne" />
+      <recent name="D:\Education\ignattask1\ignattassk\src\Junior" />
+      <recent name="D:\Education\ignattask1\ignattassk\src\preJunior" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -125,6 +162,14 @@
       <workItem from="1592851454383" duration="7000" />
       <workItem from="1593003854111" duration="637000" />
       <workItem from="1593022183212" duration="610000" />
+      <workItem from="1593188762335" duration="984000" />
+      <workItem from="1593190323042" duration="12000" />
+      <workItem from="1593190398803" duration="977000" />
+      <workItem from="1593198272700" duration="48000" />
+      <workItem from="1593198327815" duration="409000" />
+      <workItem from="1593198743316" duration="1028000" />
+      <workItem from="1593199784175" duration="1993000" />
+      <workItem from="1593201789548" duration="1845000" />
     </task>
     <task id="LOCAL-00001" summary="Новое задание&#10;&#10;Новое задание">
       <created>1591553362318</created>
@@ -167,11 +212,11 @@
       <screen x="-1920" y="0" width="1920" height="1042" />
     </state>
     <state x="-1202" y="327" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1920.1042/0.0.2048.1122@-1920.0.1920.1042" timestamp="1592765188944" />
-    <state x="577" y="277" key="FileChooserDialogImpl" timestamp="1592851460237">
+    <state x="577" y="277" key="FileChooserDialogImpl" timestamp="1593200638315">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
     <state x="-1379" y="257" key="FileChooserDialogImpl/-1920.0.1920.1042/0.0.2048.1122@-1920.0.1920.1042" timestamp="1592147916936" />
-    <state x="577" y="277" key="FileChooserDialogImpl/-1920.0.1920.1042/0.0.2048.1122@0.0.2048.1122" timestamp="1592851460237" />
+    <state x="577" y="277" key="FileChooserDialogImpl/-1920.0.1920.1042/0.0.2048.1122@0.0.2048.1122" timestamp="1593200638315" />
     <state x="-1983" y="89" key="FileChooserDialogImpl/0.0.1920.1040/-2560.-185.2048.1112@-2560.-185.2048.1112" timestamp="1591463878411" />
     <state x="541" y="256" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590996697583" />
     <state x="577" y="274" key="FileChooserDialogImpl/2560.160.1920.1030/0.0.2048.1112@0.0.2048.1112" timestamp="1591611120676" />
@@ -213,9 +258,10 @@
       <screen x="-2560" y="-185" width="2048" height="1112" />
     </state>
     <state x="-1726" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-2560.-185.2048.1112@-2560.-185.2048.1112" timestamp="1591553395218" />
-    <state x="-1879" y="166" key="run.anything.popup" timestamp="1591542774308">
-      <screen x="-2560" y="-185" width="2048" height="1112" />
+    <state x="681" y="354" key="run.anything.popup" timestamp="1593201523059">
+      <screen x="0" y="0" width="2048" height="1122" />
     </state>
+    <state x="681" y="354" key="run.anything.popup/-1920.0.1920.1042/0.0.2048.1122@0.0.2048.1122" timestamp="1593201523059" />
     <state x="-1879" y="166" key="run.anything.popup/0.0.1920.1040/-2560.-185.2048.1112@-2560.-185.2048.1112" timestamp="1591542774308" />
     <state x="-2369" y="130" width="717" height="725" key="search.everywhere.popup" timestamp="1591547429179">
       <screen x="-2560" y="-185" width="2048" height="1112" />

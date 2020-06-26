@@ -1,4 +1,4 @@
-import cl from "./App.module.css";
+import cl from "./TaskOne.module.css";
 import React from "react";
 
 type PropsType = {

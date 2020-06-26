@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import st from './listOfPlans.module.css'
 import Content from "./content/Content";
 import PriorityButtons from "./priority/PriorityButtons";
+import { v1 } from 'uuid';
 
 type ListOfPlansType = {
     firstTitle: string
@@ -12,7 +13,7 @@ type ListOfPlansType = {
 export type ValueOfTasks = {
     title: string
     priority: 'High' | 'Middle' | 'Low'
-    id: number
+    id: string
 }
 
 export type FilterPriorityType = 'High' | 'Low' | 'Middle' | 'All'
@@ -23,35 +24,35 @@ function LisfOfPlans(props: ListOfPlansType,) {
 
 
     let [list, setList] = useState<Array<ValueOfTasks>>([
-        {id: 99, title: 'Посуда', priority: 'High'},
-        {id: 98, title: 'Уборка1', priority: 'High'},
-        {id: 97, title: 'Уборка2', priority: 'High'},
-        {id: 96, title: 'Стрика1', priority: 'Middle'},
-        {id: 95, title: 'Стрика2', priority: 'Middle'},
-        {id: 94, title: 'Стрика3', priority: 'Middle'},
-        {id: 93, title: 'Полы1', priority: 'Low'},
-        {id: 92, title: 'Полы2', priority: 'Low'},
-        {id: 91, title: 'Полы3', priority: 'Low'},
+        {id: v1(), title: 'Посуда', priority: 'High'},
+        {id: v1(), title: 'Уборка1', priority: 'High'},
+        {id: v1(), title: 'Уборка2', priority: 'High'},
+        {id: v1(), title: 'Стрика1', priority: 'Middle'},
+        {id: v1(), title: 'Стрика2', priority: 'Middle'},
+        {id: v1(), title: 'Стрика3', priority: 'Middle'},
+        {id: v1(), title: 'Полы1', priority: 'Low'},
+        {id: v1(), title: 'Полы2', priority: 'Low'},
+        {id: v1(), title: 'Полы3', priority: 'Low'},
 
     ]);
     let [list2, setList2] = useState<Array<ValueOfTasks>>([
-        {id: 5, title: 'JS1', priority: 'High'},
-        {id: 6, title: 'JS2', priority: 'High'},
-        {id: 7, title: 'JS3', priority: 'High'},
-        {id: 8, title: 'React', priority: 'High'},
-        {id: 9, title: 'CSS1', priority: 'Middle'},
-        {id: 10, title: 'CSS2', priority: 'Middle'},
-        {id: 11, title: 'CSS3', priority: 'Middle'},
-        {id: 12, title: 'HTML1', priority: 'Low'},
-        {id: 13, title: 'HTML2', priority: 'Low'},
-        {id: 14, title: 'HTML3', priority: 'Low'},
+        {id: v1(), title: 'JS1', priority: 'High'},
+        {id: v1(), title: 'JS2', priority: 'High'},
+        {id: v1(), title: 'JS3', priority: 'High'},
+        {id: v1(), title: 'React', priority: 'High'},
+        {id: v1(), title: 'CSS1', priority: 'Middle'},
+        {id: v1(), title: 'CSS2', priority: 'Middle'},
+        {id: v1(), title: 'CSS3', priority: 'Middle'},
+        {id: v1(), title: 'HTML1', priority: 'Low'},
+        {id: v1(), title: 'HTML2', priority: 'Low'},
+        {id: v1(), title: 'HTML3', priority: 'Low'},
     ]);
 
 
-    function removeTask(id: number) {
-        let filteredList = list.filter(t => t.id != id);
+    function removeTask(id: string) {
+        let filteredList = list.filter(t => t.id !== id);
         setList(filteredList);
-        let filteredList2 = list2.filter(t => t.id != id);
+        let filteredList2 = list2.filter(t => t.id !== id);
         setList2(filteredList2)
 
         console.log(filteredList)
