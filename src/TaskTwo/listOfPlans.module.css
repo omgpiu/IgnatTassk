@@ -1,14 +1,16 @@
 .wrapper {
 
-    display: block;
+    flex: content-box;
     border: black 2px solid;
-    margin: 20px;
+    margin: 0 auto;
     width: 450px;
     background-color: #FFA07A;
     border-radius: 10px;
+    margin-top: 10px;
+
 }
 .thingsToDO {
-    margin: 0 auto;
+
     text-align: center;
     background-color: chocolate;
     color: black;

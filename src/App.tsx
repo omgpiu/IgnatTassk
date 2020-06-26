@@ -15,7 +15,9 @@ function App() {
         <HashRouter>
             <div className={st.wrapper}>
             <TaskNavBar/>
-            <Route path={'/homepage'} render={() => <HomePage/>}/>
+            <div className={st.item}>
+            <Route  path={'/homepage'} render={() => <HomePage />}/>
+
             <Route path={'/taskone'} render={() => <MessageContainer name={'Alex'}
                                                                      message={'Did you write something?'}
                                                                      time={'11.20'}/>}/>
@@ -25,6 +27,7 @@ function App() {
             <Route path={'/taskThreeAndFour'} render={() => <HelloInput/>}/>
             <Route path={'/taskFive'} render={() => <TaskFiveWebsite/>}/>
             </div>
+        </div>
         </HashRouter>
     );
 }

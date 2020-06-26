@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import st from './listOfPlans.module.css'
-import Content from "./content/Content";
-import PriorityButtons from "./priority/PriorityButtons";
-import { v1 } from 'uuid';
+import st from './listOfPlans.module.css';
+import Content from './content/Content';
+import PriorityButtons from './priority/PriorityButtons';
+import {v1} from 'uuid';
 
 type ListOfPlansType = {
     firstTitle: string
@@ -25,27 +25,22 @@ function LisfOfPlans(props: ListOfPlansType,) {
 
     let [list, setList] = useState<Array<ValueOfTasks>>([
         {id: v1(), title: 'Посуда', priority: 'High'},
-        {id: v1(), title: 'Уборка1', priority: 'High'},
-        {id: v1(), title: 'Уборка2', priority: 'High'},
-        {id: v1(), title: 'Стрика1', priority: 'Middle'},
+
+
         {id: v1(), title: 'Стрика2', priority: 'Middle'},
-        {id: v1(), title: 'Стрика3', priority: 'Middle'},
+
         {id: v1(), title: 'Полы1', priority: 'Low'},
-        {id: v1(), title: 'Полы2', priority: 'Low'},
-        {id: v1(), title: 'Полы3', priority: 'Low'},
+
 
     ]);
     let [list2, setList2] = useState<Array<ValueOfTasks>>([
         {id: v1(), title: 'JS1', priority: 'High'},
-        {id: v1(), title: 'JS2', priority: 'High'},
-        {id: v1(), title: 'JS3', priority: 'High'},
-        {id: v1(), title: 'React', priority: 'High'},
-        {id: v1(), title: 'CSS1', priority: 'Middle'},
+       
+
         {id: v1(), title: 'CSS2', priority: 'Middle'},
-        {id: v1(), title: 'CSS3', priority: 'Middle'},
+
         {id: v1(), title: 'HTML1', priority: 'Low'},
-        {id: v1(), title: 'HTML2', priority: 'Low'},
-        {id: v1(), title: 'HTML3', priority: 'Low'},
+
     ]);
 
 
@@ -53,39 +48,48 @@ function LisfOfPlans(props: ListOfPlansType,) {
         let filteredList = list.filter(t => t.id !== id);
         setList(filteredList);
         let filteredList2 = list2.filter(t => t.id !== id);
-        setList2(filteredList2)
+        setList2(filteredList2);
 
-        console.log(filteredList)
+        console.log(filteredList);
 
     }
 
     function changeFilter(value: FilterPriorityType) {
-        setFilter(value)
+        setFilter(value);
     }
 
 
     let tasksForToDOLists = list;
-    if (filter === 'High') { tasksForToDOLists = list.filter(t => t.priority === 'High');}
-    if (filter === 'Low') {tasksForToDOLists = list.filter(t => t.priority === 'Low');}
-     if  (filter === 'Middle') { tasksForToDOLists = list.filter(t => t.priority === 'Middle');}
+    if (filter === 'High') {
+        tasksForToDOLists = list.filter(t => t.priority === 'High');
+    }
+    if (filter === 'Low') {
+        tasksForToDOLists = list.filter(t => t.priority === 'Low');
+    }
+    if (filter === 'Middle') {
+        tasksForToDOLists = list.filter(t => t.priority === 'Middle');
+    }
     let tasksForToDOLists2 = list2;
-    if (filter === 'High') { tasksForToDOLists2 = list2.filter(t => t.priority === 'High');}
-    if (filter === 'Low') {tasksForToDOLists2 = list2.filter(t => t.priority === 'Low');}
-    if  (filter === 'Middle') { tasksForToDOLists2 = list2.filter(t => t.priority === 'Middle');}
-
-
-
+    if (filter === 'High') {
+        tasksForToDOLists2 = list2.filter(t => t.priority === 'High');
+    }
+    if (filter === 'Low') {
+        tasksForToDOLists2 = list2.filter(t => t.priority === 'Low');
+    }
+    if (filter === 'Middle') {
+        tasksForToDOLists2 = list2.filter(t => t.priority === 'Middle');
+    }
 
 
     return (
         <div className={st.wrapper}>
             <PriorityButtons changeFilter={changeFilter}/>
             <div className={st.thingsToDO}>{props.firstTitle}</div>
-            <Content lists={tasksForToDOLists} removeTask={removeTask}  />
+            <Content lists={tasksForToDOLists} removeTask={removeTask}/>
             <div className={st.thingsToDO}>{props.secondTitle}</div>
-            <Content lists={tasksForToDOLists2} removeTask={removeTask} />
+            <Content lists={tasksForToDOLists2} removeTask={removeTask}/>
         </div>
-    )
+    );
 };
 
 export default LisfOfPlans;

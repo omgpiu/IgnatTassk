@@ -1,4 +1,17 @@
 .wrapper{
+    position: relative;
 
+
+}
+
+.item {
+
+ position: fixed;
+ top: 25%;
+    left: 30%;
+    right: 25%;
+    bottom: 25%;
+    border: 1px black solid;
+    text-align: center;
 
 }

@@ -43,3 +43,53 @@
 .holder2:hover .block2{
     display:block;
 }
+.holder3 {
+    position:fixed;
+    width:100vw;
+    height:100px;
+    /*background:#ff6600;*/
+    margin:0;
+
+    text-align: center;
+}
+.block3{
+    position:absolute;
+text-align: center;
+    /*background:rgba(255,255,255, 0.7);*/
+    padding-top:50px;
+    padding-left: 10px;
+    display:none;
+}
+.holder3:hover .block3{
+    position: relative;
+    display:block;
+    text-align: center;
+}
+.holder4 {
+
+    position:fixed;
+    width:100vw;
+    height:100px;
+
+    bottom: 0;
+    text-align: center;
+}
+.block4{
+
+    text-align: center;
+
+    padding-top:50px;
+    padding-left: 10px;
+    display:none;
+
+
+    bottom: 0;
+
+
+}
+.holder4:hover .block4{
+
+    position: relative;
+    display:block;
+    text-align: center;
+}

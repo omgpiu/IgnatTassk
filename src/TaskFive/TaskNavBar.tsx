@@ -45,8 +45,31 @@ function TaskNavBar() {
                         <NavLink to='/taskfive'>TaskFive</NavLink>
                     </div>
                 </div>
-            </div><div className={st.holder3}>
+            </div>
+
+
+            <div className={st.holder3}>
                 <div className={st.block3}>
+                    <span>
+                        <NavLink to='/homepage'> HomePage </NavLink>
+                    </span>
+                    <span>
+                        <NavLink to='/taskone'> TaskOne </NavLink>
+                    </span>
+                    <span>
+                        <NavLink to='/tasktwo'> TaskTwo </NavLink>
+                    </span>
+                    <span>
+                        <NavLink to='/taskthreeandfour'> TaskThreeAndFour </NavLink>
+                    </span>
+                    <span>
+                        <NavLink to='/taskfive'> TaskFive </NavLink>
+                    </span>
+                </div>
+            </div>
+
+            <div className={st.holder4}>
+                <div className={st.block4}>
                     <span>
                         <NavLink to='/homepage'> HomePage </NavLink>
                     </span>
