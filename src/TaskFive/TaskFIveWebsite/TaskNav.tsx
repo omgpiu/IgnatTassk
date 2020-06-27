@@ -5,19 +5,15 @@ import {NavLink} from 'react-router-dom';
 function TaskNav() {
     return (
         <nav>
-
             <div>
-
-                <NavLink to='/PreJuniorPage'>PreJuniorPage</NavLink>
+                <NavLink to='/taskFive/PreJuniorPage'>PreJuniorPage</NavLink>
             </div>
             <div>
-                <NavLink to='/JuniorPage'>JuniorPage</NavLink>
+                <NavLink to='/taskFive/JuniorPage'>JuniorPage</NavLink>
             </div>
             <div>
-                <NavLink to='/JuniorPlusPage'>JuniorPlusPage</NavLink>
+                <NavLink to='/taskFive/JuniorPlusPage'>JuniorPlusPage</NavLink>
             </div>
-
-
         </nav>
 
 

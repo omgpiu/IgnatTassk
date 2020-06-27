@@ -10,13 +10,13 @@ import TaskNav from './TaskNav';
 
 function TaskFiveWebsite() {
     return (
-        <HashRouter>
+        <div>
             <TaskNav/>
-            <Route  path={'/PreJuniorPage'} render={() => <PreJuniorPage />}/>
-            <Route  path={'/JuniorPage'} render={() => <JuniorPage />}/>
-            <Route  path={'/JuniorPlusPage'} render={() => <JuniorPlusPage />}/>
+            <Route  path={'/taskFive/PreJuniorPage'} render={() => <PreJuniorPage />}/>
+            <Route  path={'/taskFive/JuniorPage'} render={() => <JuniorPage />}/>
+            <Route  path={'/taskFive/JuniorPlusPage'} render={() => <JuniorPlusPage />}/>
 
-        </HashRouter>
+        </div>
 
     );
 

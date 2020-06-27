@@ -4,9 +4,10 @@ import MessageContainer from './TaskOne/TaskOne';
 import HelloInput from './TaskThreeAndFour/HelloInput';
 import TaskNavBar from './TaskFive/TaskNavBar';
 import HomePage from './HomePage/HomePage';
-import {HashRouter, Route} from 'react-router-dom';
+import {HashRouter, Route, Redirect} from 'react-router-dom';
 import TaskFiveWebsite from './TaskFive/TaskFIveWebsite/TaskFiveWebsite';
 import st from './App.module.css';
+import {ReactComponent} from '*.svg';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
                 secondTitle={'Studying'}/>}/>
             <Route path={'/taskThreeAndFour'} render={() => <HelloInput/>}/>
             <Route path={'/taskFive'} render={() => <TaskFiveWebsite/>}/>
+            <Route   path={'/'}  render={() => <Redirect to={'/homepage' } />}/>
             </div>
         </div>
         </HashRouter>
