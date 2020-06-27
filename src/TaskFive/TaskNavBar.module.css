@@ -21,6 +21,8 @@
 }
 .holder:hover .block{
     display:block;
+    background-color: #ededed;
+
 }
 
 
@@ -42,6 +44,7 @@
 }
 .holder2:hover .block2{
     display:block;
+    background-color: #ededed;
 }
 .holder3 {
     position:fixed;
@@ -64,6 +67,7 @@ text-align: center;
     position: relative;
     display:block;
     text-align: center;
+    background-color: #ededed;
 }
 .holder4 {
 
@@ -92,4 +96,5 @@ text-align: center;
     position: relative;
     display:block;
     text-align: center;
+    background-color: #ededed;
 }
