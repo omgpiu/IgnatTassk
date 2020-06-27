@@ -46,7 +46,7 @@
 .holder3 {
     position:fixed;
     width:100vw;
-    height:100px;
+    height:50px;
     /*background:#ff6600;*/
     margin:0;
 
@@ -56,7 +56,7 @@
     position:absolute;
 text-align: center;
     /*background:rgba(255,255,255, 0.7);*/
-    padding-top:50px;
+
     padding-left: 10px;
     display:none;
 }

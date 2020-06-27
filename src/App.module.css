@@ -1,5 +1,6 @@
 .wrapper{
     position: relative;
+    background-color: #FFA07A;
 
 
 }
@@ -7,11 +8,12 @@
 .item {
 
  position: fixed;
- top: 25%;
+ top: 15%;
     left: 30%;
     right: 25%;
     bottom: 25%;
-    border: 1px black solid;
+
     text-align: center;
+
 
 }

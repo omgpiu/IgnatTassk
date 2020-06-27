@@ -12,21 +12,21 @@ function HomePage() {
                 <div className={st.story}>
                     <h1>Hello everyone!</h1>
                     <p>
-                        This is the homepage of my little website
-                        I hope you are going to enjoy this place!
-                        Have a good day!
-                    </p>
+                        This is the homepage of my little website</p>
+                        <p> I hope you are going to enjoy this place!</p>
+                        <p> Have a good day!</p>
+
                     <div className={st.avatar}>
                         <img/>
                     </div>
                     <div className={st.review}>
-                        <p>Hey, you! Yes, you!
-                            Send us your review about this website.
-                            We appriciate any review.
-                            Thank you!
-                        </p>
+                        <p>Hey, you! Yes, you!</p>
+                        <p> Send us your review about this website.</p>
+                            <p> We appriciate any review.</p>
+                                <p>  Thank you!</p>
+
                         <MyInputNya/>
-                        <MyButtonNya/>
+                        <MyButtonNya value={'Say hello'}/>
 
 
                     </div>
